@@ -1,0 +1,80 @@
+[
+    {
+        "id": 1,
+        "marka": "Audi",
+        "model": "A3",
+        "snaga": 120,
+        "gorivo": "dizel",
+        "mjenjac": "rucni",
+        "godina": 2008,
+        "cijena": 80,
+        "kilometri": 132000,
+        "slika": "http://img.autoabc.lv/audi-a3/audi-a3_2008_Hecbeks_151021114821_3.jpg",
+        "status": true
+    },
+    {
+        "id": 2,
+        "marka": "Mercedes",
+        "model": "c200",
+        "snaga": 140,
+        "gorivo": "dizel",
+        "mjenjac": "automatik",
+        "godina": 2013,
+        "cijena": 100,
+        "kilometri": 189000,
+        "slika": "https://carsguide-res.cloudinary.com/image/upload/f_auto,fl_lossy,q_auto,t_cg_hero_large/v1/editorial/mercedes-benz-c-class-2007-2013-%281%29.jpg",
+        "status": false
+    },
+    {
+        "id": 3,
+        "marka": "VW",
+        "model": "Golf V",
+        "snaga": 90,
+        "gorivo": "dizel",
+        "mjenjac": "automatik",
+        "godina": 2014,
+        "cijena": 80,
+        "kilometri": 149000,
+        "slika": "https://images.hgmsites.net/hug/2014-volkswagen-golf-gtd_100419626_h.jpg",
+        "status": false
+    },
+    {
+        "id": 4,
+        "marka": "Volvo",
+        "model": "c30",
+        "snaga": 90,
+        "gorivo": "dizel",
+        "mjenjac": "automatik",
+        "godina": 2010,
+        "cijena": 80,
+        "kilometri": 129000,
+        "slika": "https://images5.alphacoders.com/879/thumb-1920-879829.jpg",
+        "status": true
+    },
+    {
+        "id": 5,
+        "marka": "BMW",
+        "model": "320d",
+        "snaga": 150,
+        "gorivo": "dizel",
+        "mjenjac": "automatik",
+        "godina": 2015,
+        "cijena": 120,
+        "kilometri": 89000,
+        "slika": "https://i.ytimg.com/vi/aOQ79Pt-_es/maxresdefault.jpg",
+        "status": false
+    },
+    {
+        "id": 6,
+        "marka": "Zastava",
+        "model": "750",
+        "snaga": 25,
+        "gorivo": "benzin",
+        "mjenjac": "rucni",
+        "godina": 1975,
+        "cijena": 50,
+        "kilometri": 50000,
+        "slika": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/dc/ZastavaPICT3088.JPG/1200px-ZastavaPICT3088.JPG",
+        "status": false
+    }
+]
