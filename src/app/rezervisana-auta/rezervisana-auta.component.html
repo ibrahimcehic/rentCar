@@ -1,1 +1,21 @@
-<p>rezervisana-auta works!</p>
+<div class="row row-cols-1 row-cols-md-5 g-4">
+    <div *ngFor = "let auto of automobili">
+        
+    <div class="card" *ngIf ="!auto.status">
+      <img [src]=auto.slika class="card-img-top" [style.height.px]='200' [style.margin.px]='2' alt="slika ne radi">
+      <div class="card-body">
+        <h5 class="card-title">{{auto.marka}} {{auto.model}}</h5>
+        <ul class="list-group list-group-flush">
+            <li class="list-group-item">Snaga: {{auto.snaga}}</li>
+            <li class="list-group-item">Gorivo: {{auto.gorivo}}</li>
+            <li class="list-group-item">Mjenjac: {{auto.mjenjac}}</li>
+            <li class="list-group-item">Godina proizvodnje: {{auto.godina}}</li>
+ 
+        </ul>
+        <div class="card-footer bg-transparent border-success">Cijena: {{auto.cijena}}</div>
+        <button type="button" class="btn btn-primary btn-sm me-md-2 " >Rentaj</button>
+        <button type="button" class="btn btn-primary btn-sm" >Detaljnije</button>
+    </div>
+    </div>
+    </div>
+  </div>

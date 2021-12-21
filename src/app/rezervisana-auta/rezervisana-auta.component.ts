@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
+import { ICar } from '../shared/models/car';
 
 @Component({
   selector: 'app-rezervisana-auta',
@@ -12,4 +13,5 @@ export class RezervisanaAutaComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  @Input() automobili: ICar[] = [];
 }
