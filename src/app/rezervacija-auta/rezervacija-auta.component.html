@@ -16,24 +16,126 @@
   </table>  -->
 
 
-<div class="row row-cols-1 row-cols-md-5 g-4">
-    <div *ngFor = "let auto of automobili">
-        
-    <div class="card" *ngIf ="auto.status">
-      <img [src]=auto.slika class="card-img-top" [style.height.px]='200' [style.margin.px]='2' alt="slika ne radi">
+<div class="row g-4">
+    <ng-container *ngFor="let auto of automobili"> 
+    <div class="col-3 card" *ngIf ="auto.status">
+      <img [src]=auto.slika class="card-img-top" [style.height.px]='200' [style.margin.px]='2' alt="slika ">
       <div class="card-body">
         <h5 class="card-title">{{auto.marka}} {{auto.model}}</h5>
         <ul class="list-group list-group-flush">
-            <li class="list-group-item">Snaga: {{auto.snaga}}</li>
+            <li class="list-group-item">Snaga: {{auto.snaga}} ks</li>
             <li class="list-group-item">Gorivo: {{auto.gorivo}}</li>
             <li class="list-group-item">Mjenjac: {{auto.mjenjac}}</li>
             <li class="list-group-item">Godina proizvodnje: {{auto.godina}}</li>
  
         </ul>
-        <div class="card-footer bg-transparent border-success">Cijena: {{auto.cijena}}</div>
-        <button type="button" class="btn btn-primary btn-sm me-md-2 " >Rentaj</button>
-        <button type="button" class="btn btn-primary btn-sm" >Detaljnije</button>
+        <div class="card-footer bg-transparent border-success">Cijena: {{auto.cijena}} KM</div>
+        <button type="button" class="btn btn-primary btn-sm me-md-2 "  (click)="addNewItem(auto)">Rentaj</button>
+        <button type="button" class="btn btn-primary btn-sm" (click)="update(auto, modal)" >Detaljnije</button>
     </div>
     </div>
-    </div>
+</ng-container>
   </div>
+
+    <div #modal class="modal fade" tabindex="-1" >
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Detalji</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body" *ngIf ="auto">
+
+            <div>
+                <img [src]="auto.slika" class="img-fluid" alt="...">
+            </div>
+          <table>
+            <tr>
+                <td>
+                    Id
+                </td>
+                <td>
+                    <input type="number" [(ngModel)] = "auto.id">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Brand
+                </td>
+                <td>
+                    <input type="text" [(ngModel)] = "auto.marka">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Model
+                </td>
+                <td>
+                    <input type="text" [(ngModel)] = "auto.model">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Snaga
+                </td>
+                <td>
+                    <input type="number" [(ngModel)] = "auto.snaga">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Gorivo
+                </td>
+                <td>
+                    <input type="text" [(ngModel)] = "auto.gorivo">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Mjenjac
+                </td>
+                <td>
+                    <input type="text" [(ngModel)] = "auto.mjenjac">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Godina
+                </td>
+                <td>
+                    <input type="number" [(ngModel)] = "auto.godina">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                   Cijena
+                </td>
+                <td>
+                    <input type="number" [(ngModel)] = "auto.cijena"> 
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Kilometri
+                </td>
+                <td>
+                    <input type="number" [(ngModel)] = "auto.kilometri">
+                </td>
+            </tr>
+          <tr>
+              <td>
+                 Detalji
+              </td>
+              <td>
+                  <input type="text" [(ngModel)] = "auto.detalji">
+              </td>
+            </tr>
+        </table>
+                 
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        </div>
+      </div>
+   </div>
+</div> 

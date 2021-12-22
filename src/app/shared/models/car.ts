@@ -9,5 +9,6 @@ export interface ICar{
     cijena: number,
     kilometri: number,
     slika: string,
-    status: boolean
+    status: boolean,
+    detalji: string
 }
