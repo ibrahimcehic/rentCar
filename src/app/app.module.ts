@@ -11,6 +11,7 @@ import { CommonModule } from "@angular/common";
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { HttpClientModule } from '@angular/common/http';
 import { RouterModule } from '@angular/router';
+import { DetaljiComponent } from './detalji/detalji.component';
 
 
 @NgModule({
@@ -18,7 +19,8 @@ import { RouterModule } from '@angular/router';
     AppComponent,
     HomeComponent,
     RezervacijaAutaComponent,
-    RezervisanaAutaComponent
+    RezervisanaAutaComponent,
+    DetaljiComponent
   ],
   imports: [
     BrowserModule,

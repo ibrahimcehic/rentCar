@@ -46,10 +46,8 @@
         </div>
         <div class="modal-body" *ngIf ="auto">
 
-            <div>
-                <img [src]="auto.slika" class="img-fluid" alt="...">
-            </div>
-          <table>
+            <app-detalji [auto] = "auto"></app-detalji> 
+ <!--          <table>
             <tr>
                 <td>
                     Id
@@ -130,7 +128,7 @@
                   <input type="text" [(ngModel)] = "auto.detalji">
               </td>
             </tr>
-        </table>
+        </table> -->
                  
         </div>
         <div class="modal-footer">
