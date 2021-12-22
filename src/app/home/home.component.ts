@@ -26,7 +26,7 @@ export class HomeComponent implements OnInit {
     this.rezervacija = true;
     this.rezervisano = false;
 
-    this.bgColor1 = '#3CB371';
+    this.bgColor1 = '#ccffe6';
     this.bgColor2= 'white';
 
     console.log("rezervacija", this.rezervacija);
@@ -38,7 +38,7 @@ export class HomeComponent implements OnInit {
     this.rezervisano = true;
 
     this.bgColor1 = 'white';
-    this.bgColor2= '#3CB371';
+    this.bgColor2= '#ccffe6';
 
     console.log("rezervacija", this.rezervacija);
     console.log("rezervisaono", this.rezervisano);
