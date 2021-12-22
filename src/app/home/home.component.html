@@ -18,8 +18,8 @@
 
 <nav class="navbar navbar-light bg-light">
   <form class="container-fluid justify-content-start">
-    <button class="btn btn-outline-success me-2" type="button" (click) = "rezervacijaB()">Ponuda vozila</button>
-    <button class="btn btn-outline-success me-2" type="button" (click) = "rezervisanoB()">Rezervisana auta</button>
+    <button class="btn btn-outline-success me-2" type="button" [ngStyle]="{'background-color': bgColor1}" (click) = "rezervacijaB()">Ponuda vozila</button>
+    <button class="btn btn-outline-success me-2" type="button" [ngStyle]="{'background-color': bgColor2}" (click) = "rezervisanoB()">Rezervisana auta</button>
   </form>
 </nav>
 

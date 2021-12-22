@@ -13,7 +13,8 @@ export class HomeComponent implements OnInit {
   auta: ICar[] = [];
   rezervacija: boolean = false;
   rezervisano: boolean = false;
-
+  bgColor1: string = 'white';
+  bgColor2: string = 'white';
   constructor(private service: CarService) { }
 
   ngOnInit(): void {
@@ -24,6 +25,10 @@ export class HomeComponent implements OnInit {
   {
     this.rezervacija = true;
     this.rezervisano = false;
+
+    this.bgColor1 = '#3CB371';
+    this.bgColor2= 'white';
+
     console.log("rezervacija", this.rezervacija);
     console.log("rezervisaono", this.rezervisano);
   }
@@ -31,6 +36,10 @@ export class HomeComponent implements OnInit {
   {
     this.rezervacija = false;
     this.rezervisano = true;
+
+    this.bgColor1 = 'white';
+    this.bgColor2= '#3CB371';
+
     console.log("rezervacija", this.rezervacija);
     console.log("rezervisaono", this.rezervisano);
   }
